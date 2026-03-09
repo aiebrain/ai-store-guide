@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -119,6 +119,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </ol>
 <hr>
 <h2 id="1-전체-아키텍처">1. 전체 아키텍처</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/architecture.png" alt="전체 아키텍처 다이어그램" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <div class="callout callout-abstract"><div class="callout-title">📋 한 줄 요약</div><div>
 <p><strong>Lovable</strong>이 화면을 만들고, <strong>Supabase</strong>가 데이터를 저장하고, <strong>Toss/래피드</strong>가 결제를 처리합니다.</p>
 </div></div>
@@ -226,6 +227,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </tbody></table>
 <hr>
 <h2 id="2-프론트엔드-lovable-vercel">2. 프론트엔드 — Lovable + Vercel</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/lovable-process.png" alt="Lovable AI 쇼핑몰 생성 과정" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <h3 id="2-1-lovable이란">2-1. Lovable이란?</h3>
 <p>문장(프롬프트)을 입력하면 <strong>AI가 React + TailwindCSS 코드를 자동 생성</strong>해주는 서비스입니다.</p>
 <p>코딩을 전혀 몰라도 프로페셔널한 쇼핑몰 화면을 만들 수 있습니다.</p>
@@ -281,6 +283,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <p>- Preview 배포 (수정 사항 라이브 전 미리 확인)</p>
 </div></div>
 <h3 id="2-4-도메인-연결">2-4. 도메인 연결</h3>
+<div style="text-align:center;margin:2rem 0"><img src="images/domain-setup.png" alt="도메인 연결 3단계" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <ol>
 <li>도메인 구매: <a href="https://gabia.com" target="_blank">가비아</a>, <a href="https://whois.co.kr" target="_blank">후이즈</a> (연 1~2만원)</li>
 <li>Vercel → <strong>Settings → Domains</strong> → 구매한 도메인 입력</li>
@@ -291,6 +294,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </ol>
 <hr>
 <h2 id="3-백엔드-supabase">3. 백엔드 — Supabase</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/supabase-structure.png" alt="Supabase 백엔드 구조" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <h3 id="3-1-supabase란">3-1. Supabase란?</h3>
 <p><strong>Firebase의 오픈소스 대안</strong>으로, 데이터베이스 + 인증 + 파일 저장을 한 곳에서 제공합니다.</p>
 <div class="callout callout-tip"><div class="callout-title">💡 왜 Supabase?</div><div>
@@ -389,6 +393,7 @@ CREATE TABLE orders (
 </tbody></table>
 <hr>
 <h2 id="4-결제-연동-toss-래피드">4. 결제 연동 — Toss + 래피드</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/payment-flow.png" alt="결제 연동 구조" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <h3 id="4-1-결제-분기-구조">4-1. 결제 분기 구조</h3>
 <pre><code class="lang-">
 고객이 &quot;결제하기&quot; 클릭
@@ -462,6 +467,7 @@ CREATE TABLE orders (
 </div></div>
 <hr>
 <h2 id="5-부가-기능-연동">5. 부가 기능 연동</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/services-grid.png" alt="부가 서비스 한눈에 보기" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <h3 id="5-1-센드맨-전자책파일-자동-발송-cafe24">5-1. 센드맨 — 전자책/파일 자동 발송 (Cafe24)</h3>
 <div class="callout callout-success"><div class="callout-title">✅ 결제 완료 → 파일 자동 발송 → 배송완료 자동 처리</div><div>
 <p>Cafe24 앱 스토어의 파일/링크/코드 판매 자동화 서비스</p>
@@ -560,6 +566,7 @@ CREATE TABLE orders (
 </tbody></table>
 <hr>
 <h2 id="6-ai-운영-자동화">6. AI 운영 자동화</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/ai-automation.png" alt="AI 운영 자동화 흐름" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <div class="callout callout-abstract"><div class="callout-title">📋 핵심</div><div>
 <p><strong>Claude Code</strong>로 자동화 코드를 직접 구현하고, <strong>Claude API</strong>로 AI 기능을 연동합니다.</p>
 </div></div>
@@ -607,6 +614,7 @@ CREATE TABLE orders (
 </code></pre>
 <hr>
 <h2 id="7-구축-로드맵-2주">7. 구축 로드맵 (2주)</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/roadmap.png" alt="2주 구축 로드맵" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <div class="callout callout-tip"><div class="callout-title">💡 하루 2~3시간씩 진행 기준</div><div>
 </div></div>
 <table><thead><tr>
@@ -702,6 +710,7 @@ CREATE TABLE orders (
 </tbody></table>
 <hr>
 <h2 id="8-월-비용-정리">8. 월 비용 정리</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/cost-compare.png" alt="월 비용 비교" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <h3 id="시작-단계-월-주문-100건-이하">시작 단계 (월 주문 100건 이하)</h3>
 <table><thead><tr>
 <th>서비스</th>
@@ -811,6 +820,7 @@ CREATE TABLE orders (
 </tbody></table>
 <hr>
 <h2 id="9-자주-묻는-질문-faq">9. 자주 묻는 질문 (FAQ)</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/faq-banner.png" alt="자주 묻는 질문" style="max-width:100%;border-radius:12px;border:1px solid #334155;margin:1.5rem 0"></div>
 <div class="callout callout-question"><div class="callout-title">❓ Q. 코딩을 전혀 모르는데 정말 가능한가요?</div><div>
 <p><strong>네.</strong> Lovable이 UI를, Supabase가 백엔드를 자동 처리합니다. SQL도 복사-붙여넣기만 하면 됩니다.</p>
 </div></div>
@@ -929,3 +939,4 @@ links.forEach(l=>l.addEventListener('click',()=>document.querySelector('.sidebar
 </script>
 </body>
 </html>
+

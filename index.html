@@ -27,7 +27,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .yt-banner-sub{color:rgba(255,255,255,0.85);font-size:0.85rem;font-weight:400}
 .yt-subscribe-btn{background:white;color:#FF0000;padding:0.5rem 1.5rem;border-radius:50px;font-weight:800;font-size:0.95rem;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.2s;border:none;cursor:pointer}
 .yt-subscribe-btn:hover{transform:scale(1.05);box-shadow:0 4px 20px rgba(0,0,0,0.3)}
-.yt-subscribe-btn svg{width:20px;height:14px;fill:#FF0000}
+/* removed svg icon */
 /* Floating YouTube Button */
 .yt-float{position:fixed;bottom:2rem;right:2rem;z-index:999;animation:pulse 2s infinite}
 .yt-float a{display:flex;align-items:center;gap:0.5rem;background:#FF0000;color:white;padding:0.75rem 1.25rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.9rem;box-shadow:0 4px 20px rgba(255,0,0,0.4);transition:all 0.2s}
@@ -45,7 +45,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 /* Layout */
 .layout{display:flex;max-width:1200px;margin:0 auto;min-height:calc(100vh - 60px)}
 .sidebar{width:260px;padding:1.5rem 1rem;border-right:1px solid var(--border);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;flex-shrink:0}
-.sidebar a{display:block;padding:0.5rem 0.75rem;color:var(--text2);text-decoration:none;font-size:0.85rem;border-radius:6px;margin-bottom:2px;transition:all 0.2s}
+.sidebar a{display:block;padding:0.5rem 0.75rem;color:var(--text2);text-decoration:none;font-size:0.82rem;border-radius:6px;margin-bottom:2px;transition:all 0.2s;line-height:1.4;word-break:keep-all}
 .sidebar a:hover,.sidebar a.active{background:var(--surface);color:var(--accent)}
 .content{flex:1;padding:2rem 3rem;max-width:calc(1200px - 260px);overflow-x:hidden}
 .content h1{font-size:2rem;margin:2rem 0 1rem;color:var(--accent);border-bottom:2px solid var(--border);padding-bottom:0.5rem}
@@ -125,7 +125,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <div class="yt-banner-text">🔥 AI로 쇼핑몰 매출 3배 올리는 방법, 영상으로 배우세요!</div>
 <div class="yt-banner-sub">구독자 1,000명 돌파 기념 — 실전 자동화 노하우 매주 공개 중</div>
 </div>
-<span class="yt-subscribe-btn"><svg viewBox="0 0 24 17"><path d="M23.5 2.5c-.3-1-1-1.8-2-2C19.6 0 12 0 12 0S4.4 0 2.5.5c-1 .3-1.8 1-2 2C0 4.4 0 8.5 0 8.5s0 4 .5 6c.3 1 1 1.7 2 2 1.9.5 9.5.5 9.5.5s7.6 0 9.5-.5c1-.3 1.7-1 2-2 .5-2 .5-6 .5-6s0-4-.5-6zM9.5 12V5l6.5 3.5L9.5 12z"/></svg>구독하기</span>
+<span class="yt-subscribe-btn">▶ 구독하기</span>
 </div>
 </a>
 
@@ -1014,12 +1014,7 @@ CREATE TABLE orders (
 <a href="#10-월-비용-정리">10. 월 비용 정리</a>
 <a href="#셋팅-체크리스트">📋 셋팅 체크리스트</a>
 <a href="#유용한-링크-모음">🔗 유용한 링크 모음</a></nav>
-<main class="content" id="content-cafe24"><p>﻿---</p>
-<p>share: true</p>
-<p>share_link: https://share.note.sx/j8ygju8m#5K8ltj1GSPamrsl5boB8shfGIWFUy4tqTMK4VHzN/8c</p>
-<p>share_updated: 2026-03-10T00:14:20+09:00</p>
-<hr>
-<h1 id="cafe24-자사몰-셋팅-완전-가이드">🛒 Cafe24 자사몰 셋팅 완전 가이드</h1>
+<main class="content" id="content-cafe24"><h1 id="cafe24-자사몰-셋팅-완전-가이드">🛒 Cafe24 자사몰 셋팅 완전 가이드</h1>
 <div class="callout callout-info"><div class="callout-title">ℹ️ 이 가이드는?</div><div>
 <p>Cafe24에서 처음 자사몰을 만드는 초보자를 위한 <strong>A to Z 셋팅 가이드</strong>입니다.</p>
 <p>회원가입부터 주문관리까지, 실제 운영에 필요한 모든 단계를 다룹니다.</p>

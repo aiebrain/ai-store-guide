@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -119,6 +119,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </ol>
 <hr>
 <h2 id="1-전체-아키텍처">1. 전체 아키텍처</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/architecture.png" alt="전체 아키텍처 다이어그램" style="max-width:100%;border-radius:12px;border:1px solid #334155"></div>
 <div class="callout callout-abstract"><div class="callout-title">📋 한 줄 요약</div><div>
 <p><strong>Lovable</strong>이 화면을 만들고, <strong>Supabase</strong>가 데이터를 저장하고, <strong>Toss/Rapyd</strong>가 결제를 처리합니다.</p>
 </div></div>
@@ -422,6 +423,7 @@ CREATE TABLE order_items (
 </tbody></table>
 <hr>
 <h2 id="4-결제-연동-toss-rapyd">4. 결제 연동 — Toss + Rapyd</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/payment-flow.png" alt="결제 흐름 다이어그램" style="max-width:100%;border-radius:12px;border:1px solid #334155"></div>
 <h3 id="4-1-결제-분기-구조">4-1. 결제 분기 구조</h3>
 <pre><code class="lang-">
 고객이 &quot;결제하기&quot; 클릭
@@ -726,6 +728,7 @@ CREATE TABLE order_items (
 </tbody></table>
 <hr>
 <h2 id="8-월-비용-정리">8. 월 비용 정리</h2>
+<div style="text-align:center;margin:2rem 0"><img src="images/cost-compare.png" alt="월 비용 비교" style="max-width:100%;border-radius:12px;border:1px solid #334155"></div>
 <h3 id="시작-단계-월-주문-100건-이하">시작 단계 (월 주문 100건 이하)</h3>
 <table><thead><tr>
 <th>서비스</th>
@@ -936,8 +939,7 @@ CREATE TABLE order_items (
 </ul></main>
 </div>
 <div class="footer">
-Made with ❤️ by <a href="https://www.youtube.com/@aiebrain">AI 커머스 브레인</a> |
-<a href="https://github.com/aiebrain/ai-store-guide">GitHub</a>
+Made with ❤️ by <a href="https://www.youtube.com/@aiebrain">AI 커머스 브레인</a>
 </div>
 <script>
 // Copy buttons for code blocks
@@ -957,3 +959,5 @@ links.forEach(l=>l.addEventListener('click',()=>document.querySelector('.sidebar
 </script>
 </body>
 </html>
+
+

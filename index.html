@@ -18,10 +18,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .brand{font-size:1.2rem;font-weight:700;color:var(--accent)}
 .brand span{color:var(--text2);font-weight:400;font-size:0.9rem;margin-left:0.5rem}
 /* YouTube CTA Banner */
-.yt-banner{background:linear-gradient(135deg, #FF0000 0%, #cc0000 50%, #990000 100%);padding:1rem 2rem;text-align:center;cursor:pointer;transition:all 0.3s;position:relative;overflow:hidden}
-.yt-banner:hover{filter:brightness(1.1);transform:scale(1.005)}
-.yt-banner::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);animation:shimmer 3s infinite}
-@keyframes shimmer{0%{left:-100%}100%{left:100%}}
+.yt-banner{background:linear-gradient(90deg, #CC0000 0%, #FF0000 50%, #CC0000 100%);padding:1rem 2rem;text-align:center;cursor:pointer;transition:all 0.3s}
+.yt-banner:hover{filter:brightness(1.15)}
 .yt-banner-inner{max-width:800px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
 .yt-banner-text{color:white;font-size:1.1rem;font-weight:700}
 .yt-banner-sub{color:rgba(255,255,255,0.85);font-size:0.85rem;font-weight:400}
